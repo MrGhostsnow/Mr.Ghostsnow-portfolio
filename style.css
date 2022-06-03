@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap');
+
 * {
     margin: 0;
     padding: 0;    
@@ -7,6 +9,17 @@ body,
 html {
     width: 100vw;
     height: 100vh;
+    background-color: black;
+    font-family: 'Charis SIL', serif;
+}
+
+.borda_fora {
+    border: 4px solid blueviolet;
+    padding: 1px;
+}
+
+.borda_dentro {
+    border: 2px solid gold;
 }
 
 .container_header {
@@ -20,19 +33,45 @@ html {
     margin-left: 30px;
     font-size: 40px;
     font-weight: 800;
+    color: aliceblue;
 }
 
+.fundo {
+    position: absolute;
+    background-color: blueviolet;
+    padding: 180px;
+    border-radius: 10px 25px 80px 100px;
+    transform: rotate(35deg);
+    top: -100px;
+    left: -18px;
+    
+}
 
 ul {
     position: absolute;
     left: 1200px;
     display: flex;
     justify-content: center;
+    
+
 }
 
 li {
     margin: 20px;
     list-style-type: none;
+    color: aliceblue;
+    
+
+}
+
+a {
+    text-decoration: none;
+    z-index: 9999;
+    border-radius: 12px;
+}
+
+a:hover {
+    background-color: rgb(40, 13, 65);
 }
 
 .container_saudacao {
@@ -46,13 +85,28 @@ li {
     display: flex;
     font-size: 25px;
     margin-left: 25px;
+    width: 25%;
+    color: aliceblue;
 }
 
 .detalhes_saudacao {
     position: relative;
     display: flex;
-    right: 320px;
+    font-size: large;
+    right: 340px;
     top: 28px;
+    margin-top: 2.5px;
+    /* color: aliceblue; */
+    color: green;
+    animation: neon 1s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 35px #85FF64,
+                     0 0 40px #2BBF03,
+                     0 0 55px #141ae2;
+    }
 }
 
 .sobre_mim {
@@ -67,6 +121,7 @@ li {
     position: absolute;
     justify-content: center;
     width: 100%;
+    color: aliceblue;
 }
 
 .detalhes_apresentacao{
@@ -75,7 +130,8 @@ li {
     justify-content: center;
     text-align: center;
     top: 40px;
-    width: 20%;
+    width: 30%;
+    color: aliceblue;
 }
 
 .container_projetos {
@@ -86,16 +142,91 @@ li {
 
 .projetos {
     display: flex;
-    padding: 0;
+    position: absolute;
+    color: aliceblue;
+    
 }
 
 .card_projeto {
     display: flex;
     justify-content: center;
     flex-direction:row;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
     padding: 25px;
     margin-top: 55px;
     margin-left: 20px;
     width: 20%;
+    margin-bottom: 80px;
+    color: aliceblue;
+}
+
+.container_habilidades {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.titulo_habilidades {
+    display: flex;
+    position: absolute;
+    color: aliceblue;
+}
+
+.card_habilidades {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    color: aliceblue;
+  
+}
+
+.card_habilidades p {
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 25px;
+    margin-top: 55px;
+    margin-left: 20px;
+    width: 20%;
+    margin-bottom: 80px;
+    color: aliceblue;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: blueviolet;
+}
+
+@keyframes move {
+    100% {
+        transform: translate(100rem);
+    }
+}
+
+.wrapper {
+    animation: move 20s infinite linear;
+}
+
+@keyframes stomp {
+    0%,
+    70%,
+    100% {
+        transform: rotate(0);
+    }
+    60% {
+        transform: translateY(-2.5rem) rotate(-6deg);
+    }
+}
+
+.monkey {
+    animation: stomp 1s infinite;
+    height: 100px;
 }
