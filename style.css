@@ -27,15 +27,18 @@ html {
 .container_header {
     width: 100%;
     display: flex;
-    margin-bottom: 200px;
+    margin-bottom: 400px;
 }
 
-.titulo_pagina{
+.imagem_logo{
     position: absolute;
     margin-left: 30px;
+    max-width: 150px;
+    min-width: 50px;
     font-size: 40px;
     font-weight: 800;
-    color: aliceblue;
+    color: rgb(249, 240, 255);
+    margin-bottom: 250px;
 }
 
 .fundo {
@@ -73,7 +76,7 @@ li {
 }
 
 .sobre:hover {
-    background-color: rgb(40, 13, 65);
+    background-color: #280d41;
 }
 
 .container_saudacao {
@@ -123,7 +126,8 @@ li {
     position: absolute;
     justify-content: center;
     width: 100%;
-    color: aliceblue;
+    color: green;
+    animation: neon 1s ease-in-out infinite alternate;
 }
 
 .detalhes_apresentacao{
@@ -145,8 +149,8 @@ li {
 .projetos {
     display: flex;
     position: absolute;
-    color: aliceblue;
-    
+    color: green;
+    animation: neon 1s ease-in-out infinite alternate;
 }
 
 .card_projeto {
@@ -170,7 +174,8 @@ li {
 .titulo_habilidades {
     display: flex;
     position: absolute;
-    color: aliceblue;
+    color: green;
+    animation: neon 1s ease-in-out infinite alternate;
 }
 
 .card_habilidades {
@@ -339,7 +344,7 @@ footer {
     justify-content: center;
     width: 100%;
     margin-top: 0px;
-    background-color: blueviolet;
+    background-color: #8a2be2;
 }
 
 footer a {
@@ -367,14 +372,14 @@ footer a {
     0%,
     70%,
     100% {
-        transform: rotate(0);
+        transform: rotate();
     }
     60% {
-        transform: translateY() rotate(-6deg);
+        transform: translateY(25%) rotate(-6deg);
     }
 }
 
-.monkey {
+.mario {
     animation: stomp 1s infinite;
     height: 100px;
 }
