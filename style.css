@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Charis+SIL&display=swap');
 
-@import url(https://fonts.googleapis.com/css?family=Raleway:400,200,300,800);
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,200,300,800');
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -24,6 +26,80 @@ html {
     border: 2px solid gold;
 }
 
+.modal_contato {
+    background-color: #ffffff50;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+  }
+
+  .modal{
+    margin: 1rem;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    min-height: 400px;
+    background-color: #fff;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  .modal_titulo{
+    display: flex;
+    justify-content: center;
+    background-color:#280d41 ;
+    padding: 1rem;
+    color: #fff;
+  }
+
+  .close_modal {
+    position: relative;
+    left: 350px;
+    font-size: 1rem;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .modal_corpo {
+    padding: 50px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #000000;
+  }
+
+  .card_icone {
+      display: flex;
+      justify-content: center;
+      margin: 35px;
+      color: #2BBF03;
+      animation: neon 1s ease-in-out infinite alternate;
+  }
+
+  .img_iconEmail{
+    position: relative;
+    left: 60px;
+  }
+
+  .img_iconPhone{
+    position: relative;
+    left: 30px;
+  }
+
+
 .container_header {
     width: 100%;
     display: flex;
@@ -32,8 +108,9 @@ html {
 
 .imagem_logo{
     position: absolute;
-    margin-left: 30px;
-    max-width: 150px;
+    margin-left: 12px;
+    margin-top: 3px;
+    max-width: 100px;
     min-width: 50px;
     font-size: 40px;
     font-weight: 800;
@@ -43,12 +120,12 @@ html {
 
 .fundo {
     position: absolute;
-    background-color: blueviolet;
-    padding: 180px;
+    background-color:#280d41 ;
+    padding: 210px;
     border-radius: 10px 25px 80px 100px;
     transform: rotate(35deg);
-    top: -100px;
-    left: -18px;
+    top: -150px;
+    left: -35px;
     
 }
 
@@ -76,7 +153,23 @@ li {
 }
 
 .sobre:hover {
+    background-color: #000000;
+    color: #2BBF03;
+    animation: neon 1s ease-in-out infinite alternate;
+}
+
+.botao_contato {
+    position: relative;
+    right: 542px;
+    top: 80px;
+    width: 10.5%;
     background-color: #280d41;
+    color: #2BBF03;
+    animation: neon 1s ease-in-out infinite alternate;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    font-size: large;
 }
 
 .container_saudacao {

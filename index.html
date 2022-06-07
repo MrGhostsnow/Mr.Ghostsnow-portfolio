@@ -11,8 +11,47 @@
     <div class="borda_fora">
       <p class="interno"></p>
       <div class="borda_dentro">
+        <div class="modal_contato">
+          <div class="modal">
+            <div class="modal_titulo"><p>Contatos</p>
+              <a onclick="fecharModal()" class="close_modal">X</a>
+            </div>
+            <div class="modal_corpo">
+              <div class="card_icone" id="linkedin">
+                <a target="_blanke" href="https://www.linkedin.com/in/victor-silva-teixeira-b9a4391a3/">
+                  <figure >
+                    <img src="./assets/icons/link_in.png" alt="" />
+                  </figure>
+                </a>
+              </div>
+              <div class="card_icone">
+                <a target="_blanke" href="https://github.com/MrGhostsnow">
+                  <figure>
+                    <img src="./assets/icons/link_git.png" alt="" />
+                  </figure>
+                </a>
+              </div>
+              <div class="card_icone">
+                <figure>
+                  <img class="img_iconEmail" src="./assets/icons/link_email.png" alt="" />
+                  <figcaption>victorio5054@gmail.com</figcaption>
+                </figure>
+              </div>
+              <div class="card_icone">
+                <figure>
+                  <img class="img_iconPhone" src="./assets/icons/link_phone.png" alt="" />
+                  <figcaption>(77)98838-3289</figcaption>
+                </figure>
+              </div>
+              </div>
+          </div>
+        </div>
         <section class="container_header">
-          <img class="imagem_logo" src="./assets/logo/ouroboros (1).png" alt="">
+          <img
+            class="imagem_logo"
+            src="./assets/logo/ouroboros (1).png"
+            alt=""
+          />
           <nav class="container_lista">
             <ul>
               <img class="fundo" />
@@ -31,6 +70,7 @@
         <section class="container_saudacao">
           <h1 class="saudacao">Olá, Bem-vindo! Eu sou Victor.</h1>
           <p class="detalhes_saudacao">Desenvolvedor Front-End</p>
+          <button class="botao_contato" onclick="abrirModal()" type="button">Contato</button>
         </section>
         <section class="sobre_mim">
           <h1 class="titulo_apresentacao">Sobre mim</h1>
@@ -53,72 +93,69 @@
               <figcaption>
                 <h2>Pixabay</h2>
                 <p>
-                  Projeto desenvolvido para site de busca de fotos
-                  com consumo de API.
+                  Projeto desenvolvido para site de busca de fotos com consumo
+                  de API.
                 </p>
                 <a href="#"></a>
               </figcaption>
             </figure>
             <figure class="snip0015">
-                <img src="./assets/images/panteao.png" alt="" />
-                <figcaption>
-                  <h2>Panteão</h2>
-                  <p>
-                    Projeto desenvolvido para site de cadastro, alteração e visualização de detalhes.
-                  </p>
-                  <a href="#"></a>
-                </figcaption>
-              </figure>
-              <figure class="snip0015">
-                <img src="./assets/images/alterando_imagens.png" alt="" />
-                <figcaption>
-                  <h2>Alterador de imagem</h2>
-                  <p>
-                    Projeto desenvolvido para site de alteração de imagem.
-                  </p>
-                  <a href="#"></a>
-                </figcaption>
-              </figure>
-              <figure class="snip0015">
-                <img src="./assets/images/pokedex.png" alt="" />
-                <figcaption>
-                  <h2>Pokédex</h2>
-                  <p>
-                    Projeto desenvolvido para site de cadastro, alteração e visualização de detalhes. 
-                  </p>
-                  <a href="#"></a>
-                </figcaption>
-              </figure>
-              <figure class="snip0015">
-                <img src="./assets/images/el_geladon.png" alt="" />
-                <figcaption>
-                  <h2>El Geladon</h2>
-                  <p>
-                    Projeto desenvolvido para site cardápio de cadastro, alteração e visualização de detalhes.
-                  </p>
-                  <a href="#"></a>
-                </figcaption>
-              </figure>
-              <figure class="snip0015">
-                <img src="./assets/images/todo_list.png" alt="" />
-                <figcaption>
-                  <h2>To Do List</h2>
-                  <p>
-                    Projeto desenvolvido para site de lista de tarefas.
-                  </p>
-                  <a href="#"></a>
-                </figcaption>
-              </figure>
-              <figure class="snip0015">
-                <img src="./assets/images/sist_login.png" alt="" />
-                <figcaption>
-                  <h2>Página de Login</h2>
-                  <p>
-                    Projeto desenvolvido para site de login e cadastro.
-                  </p>
-                  <a href="#"></a>
-                </figcaption>
-              </figure>
+              <img src="./assets/images/panteao.png" alt="" />
+              <figcaption>
+                <h2>Panteão</h2>
+                <p>
+                  Projeto desenvolvido para site de cadastro, alteração e
+                  visualização de detalhes.
+                </p>
+                <a href="#"></a>
+              </figcaption>
+            </figure>
+            <figure class="snip0015">
+              <img src="./assets/images/alterando_imagens.png" alt="" />
+              <figcaption>
+                <h2>Alterador de imagem</h2>
+                <p>Projeto desenvolvido para site de alteração de imagem.</p>
+                <a href="#"></a>
+              </figcaption>
+            </figure>
+            <figure class="snip0015">
+              <img src="./assets/images/pokedex.png" alt="" />
+              <figcaption>
+                <h2>Pokédex</h2>
+                <p>
+                  Projeto desenvolvido para site de cadastro, alteração e
+                  visualização de detalhes.
+                </p>
+                <a href="#"></a>
+              </figcaption>
+            </figure>
+            <figure class="snip0015">
+              <img src="./assets/images/el_geladon.png" alt="" />
+              <figcaption>
+                <h2>El Geladon</h2>
+                <p>
+                  Projeto desenvolvido para site cardápio de cadastro, alteração
+                  e visualização de detalhes.
+                </p>
+                <a href="#"></a>
+              </figcaption>
+            </figure>
+            <figure class="snip0015">
+              <img src="./assets/images/todo_list.png" alt="" />
+              <figcaption>
+                <h2>To Do List</h2>
+                <p>Projeto desenvolvido para site de lista de tarefas.</p>
+                <a href="#"></a>
+              </figcaption>
+            </figure>
+            <figure class="snip0015">
+              <img src="./assets/images/sist_login.png" alt="" />
+              <figcaption>
+                <h2>Página de Login</h2>
+                <p>Projeto desenvolvido para site de login e cadastro.</p>
+                <a href="#"></a>
+              </figcaption>
+            </figure>
           </div>
           <div class="card_projeto">
             <img src="" alt="" />
@@ -128,9 +165,13 @@
         <section class="container_habilidades">
           <h1 class="titulo_habilidades">Habilidades</h1>
           <div class="card_habilidades">
-            <img class="icon_html icon" src="./assets/icons/html.svg" alt="">
-            <img class="icon_css icon" src="./assets/icons/css.svg" alt="">
-            <img class="icon_js icon" src="./assets/icons/javascript.svg" alt="">
+            <img class="icon_html icon" src="./assets/icons/html.svg" alt="" />
+            <img class="icon_css icon" src="./assets/icons/css.svg" alt="" />
+            <img
+              class="icon_js icon"
+              src="./assets/icons/javascript.svg"
+              alt=""
+            />
           </div>
         </section>
         <div class="wrapper">
@@ -146,5 +187,6 @@
         </footer>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
