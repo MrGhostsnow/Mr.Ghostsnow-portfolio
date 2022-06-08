@@ -17,6 +17,13 @@ html {
     font-family: 'Charis SIL', serif;
 }
 
+a{
+  text-decoration: none;
+  color: #2BBF03;
+  cursor: pointer;
+  transition: all 5s ease-in-out;
+}
+
 .borda_fora {
     border: 4px solid blueviolet;
     padding: 1px;
@@ -59,11 +66,19 @@ html {
     background-color:#280d41 ;
     padding: 1rem;
     color: #fff;
+    color: #2BBF03;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 800;
+    font-size: large;
+  }
+
+  .modal_titulo h1 {
+    animation: neon 1s ease-in-out infinite alternate;
   }
 
   .close_modal {
     position: relative;
-    left: 350px;
+    left: 345px;
     font-size: 1rem;
     color: #fff;
     text-decoration: none;
@@ -87,7 +102,67 @@ html {
       margin: 35px;
       color: #2BBF03;
       animation: neon 1s ease-in-out infinite alternate;
+      cursor: pointer;
   }
+
+   #linkedin:hover {
+    animation: tremer .2s;
+    animation-iteration-count: 4;
+    
+  }
+
+  #linkedin:hover .legenda_linkedin {
+    opacity: 1;
+    animation: neon 1s ease-in-out infinite alternate;
+  }
+
+  #git:hover {
+    animation: tremer .2s;
+    animation-iteration-count: 4;
+  }
+
+  #git:hover .legenda_git {
+    opacity: 1;
+    animation: neon 1s ease-in-out infinite alternate;
+  }  
+
+  #email:hover {
+    animation: tremer .2s;
+    animation-iteration-count: 4;
+  }
+
+  #email:hover .legenda_email {
+    opacity: 1;
+    animation: neon 1s ease-in-out infinite alternate;
+  }
+
+  #phone:hover {
+    animation: tremer .2s;
+      animation-iteration-count: 4;
+  }
+
+  #phone:hover .legenda_phone {
+    opacity: 1;
+    animation: neon 1s ease-in-out infinite alternate;
+  }
+
+  @keyframes tremer {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px;}
+    100% {margin-left: 0;}
+}
+
+.img_iconLinkedin {
+  position: relative;
+  left: 42px;
+}
+
+.img_iconGit {
+  position: relative;
+  left: 20px;
+}
 
   .img_iconEmail{
     position: relative;
@@ -96,14 +171,32 @@ html {
 
   .img_iconPhone{
     position: relative;
-    left: 30px;
+    left: 32px;
+  }
+
+  .legenda_phone {
+    opacity: 0;
+  }
+
+  .legenda_email {
+    opacity: 0;
+  }
+
+  .legenda_git {
+    opacity: 0;
+  }
+
+  .legenda_linkedin {
+    opacity: 0;
   }
 
 
 .container_header {
     width: 100%;
     display: flex;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
+    position: fixed;
+    z-index: 9998;
 }
 
 .imagem_logo{
@@ -121,11 +214,10 @@ html {
 .fundo {
     position: absolute;
     background-color:#280d41 ;
-    padding: 210px;
-    border-radius: 10px 25px 80px 100px;
-    transform: rotate(35deg);
+    padding: 120px 200px;
+    border-radius: 10px 80px 80px 80px;
     top: -150px;
-    left: -35px;
+    left: -40px;
     
 }
 
@@ -146,38 +238,48 @@ li {
 
 }
 
+
 .sobre {
     text-decoration: none;
     z-index: 9999;
     border-radius: 12px;
 }
 
+li:hover {
+  color: #2BBF03;
+}
 .sobre:hover {
     background-color: #000000;
+    border-radius: 10px 80px 80px 80px;
     color: #2BBF03;
     animation: neon 1s ease-in-out infinite alternate;
 }
 
-.botao_contato {
-    position: relative;
-    right: 542px;
-    top: 80px;
-    width: 10.5%;
-    background-color: #280d41;
-    color: #2BBF03;
-    animation: neon 1s ease-in-out infinite alternate;
-    cursor: pointer;
-    border-radius: 5px;
-    font-family: 'Kanit', sans-serif;
-    font-size: large;
-}
+
 
 .container_saudacao {
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    margin-top: 300px;
     margin-bottom: 150px;
 }
+
+
+.botao_contato {
+  position: relative;
+  right: 542px;
+  top: 80px;
+  width: 10.5%;
+  background-color: #280d41;
+  color: #2BBF03;
+  animation: neon 1s ease-in-out infinite alternate;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Kanit', sans-serif;
+  font-size: large;
+}
+
 
 .saudacao {
     display: flex;
@@ -207,6 +309,20 @@ li {
     }
 }
 
+.modal_sobre {
+  background-color: #ffffff50;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
 .sobre_mim {
     display: flex;
     justify-content: center;
@@ -233,6 +349,20 @@ li {
     color: aliceblue;
 }
 
+.botao_sobre {
+  position: relative;
+  right: 545px;
+  top: 80px;
+  width: 10.5%;
+  background-color: #280d41;
+  color: #2BBF03;
+  animation: neon 1s ease-in-out infinite alternate;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Kanit', sans-serif;
+  font-size: large;
+}
+
 .container_projetos {
     display: flex;
     justify-content: center;
@@ -247,9 +377,8 @@ li {
 }
 
 .card_projeto {
-    display: inline-block;
-    justify-content: center;
-    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
     margin: 55px 0 80px 20px;
     height: 100%;
     padding: 25px; 
@@ -448,17 +577,16 @@ footer a {
     width: 50%; 
     font-weight: 800;
     justify-content: center;
-    animation: neon 1s ease-in-out infinite alternate;
 }
 
 @keyframes move {
     100% {
-        transform: translate(100rem);
+        transform: translate(94rem);
     }
 }
 
 .wrapper {
-    animation: move 10s infinite linear;
+    animation: move 8s infinite linear;
 }
 
 @keyframes stomp {

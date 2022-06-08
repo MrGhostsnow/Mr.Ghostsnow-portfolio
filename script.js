@@ -4,6 +4,7 @@ const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const modal = document.querySelector(".modal_contato");
 const close = document.querySelector(".close_modal");
+const sobreModal = document.querySelector(".modal_sobre")
 
 
 function abrirModal(){
@@ -15,6 +16,19 @@ function abrirModal(){
 function fecharModal(){
     addEventListener("click", () => {
         modal.style.display = "none";
+    })
+};
+
+
+function abrirModalSobre(){
+    addEventListener("click", () => {
+        sobreModal.style.display = "flex";
+    })
+};
+
+function fecharModalSobre(){
+    addEventListener("click", () => {
+        sobreModal.style.display = "none";
     })
 };
 
