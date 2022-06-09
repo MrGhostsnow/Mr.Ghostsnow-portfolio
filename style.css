@@ -21,7 +21,6 @@ a{
   text-decoration: none;
   color: #2BBF03;
   cursor: pointer;
-  transition: all 5s ease-in-out;
 }
 
 .borda_fora {
@@ -138,7 +137,7 @@ a{
 
   #phone:hover {
     animation: tremer .2s;
-      animation-iteration-count: 4;
+    animation-iteration-count: 4;
   }
 
   #phone:hover .legenda_phone {
@@ -199,6 +198,15 @@ a{
     z-index: 9998;
 }
 
+@keyframes loading {
+	0% {
+		transform: rotate(0);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
 .imagem_logo{
     position: absolute;
     margin-left: 12px;
@@ -208,12 +216,17 @@ a{
     font-size: 40px;
     font-weight: 800;
     color: rgb(249, 240, 255);
-    margin-bottom: 250px;
+    margin-bottom: 250px; 
+}
+
+.imagem_logo:hover {
+  animation: loading 2s infinite linear;
 }
 
 .fundo {
     position: absolute;
-    background-color:#280d41 ;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,196,1) 35%);
     padding: 120px 200px;
     border-radius: 10px 80px 80px 80px;
     top: -150px;
@@ -269,15 +282,20 @@ li:hover {
 .botao_contato {
   position: relative;
   right: 542px;
-  top: 80px;
+  top: 100px;
   width: 10.5%;
-  background-color: #280d41;
-  color: #2BBF03;
-  animation: neon 1s ease-in-out infinite alternate;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,196,1) 35%);
+  color: #ffffffc9;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: 'Kanit', sans-serif;
   font-size: large;
+}
+
+.botao_contato:hover {
+  transform: scale(1.1);
+    transition: all 0.5s;
 }
 
 
@@ -296,7 +314,6 @@ li:hover {
     right: 340px;
     top: 28px;
     margin-top: 2.5px;
-    /* color: aliceblue; */
     color: green;
     animation: neon 1s ease-in-out infinite alternate;
 }
@@ -354,13 +371,19 @@ li:hover {
   right: 545px;
   top: 80px;
   width: 10.5%;
-  background-color: #280d41;
-  color: #2BBF03;
-  animation: neon 1s ease-in-out infinite alternate;
+  margin-right: 10px;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,40,196,1) 35%);
+  color: #ffffffc9;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 15px;
   font-family: 'Kanit', sans-serif;
   font-size: large;
+}
+
+.botao_sobre:hover{
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 
 .container_projetos {
@@ -587,6 +610,7 @@ footer a {
 
 .wrapper {
     animation: move 8s infinite linear;
+    width: 100%;
 }
 
 @keyframes stomp {
