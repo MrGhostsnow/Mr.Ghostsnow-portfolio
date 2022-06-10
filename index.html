@@ -47,33 +47,30 @@
               </div>
           </div>
         </div>
+       
+       
         <section class="container_header">
           <img
             class="imagem_logo"
             src="./assets/logo/ouroboros (1).png"
             alt=""
           />
-          <nav class="container_lista">
-            <ul>
-              <img class="fundo" />
-              <a class="sobre" onclick="abrirModalSobre()">
-                <li>Sobre mim</li>
-              </a>
-              <a class="sobre" href="#projetos">
-                <li>Projetos</li>
-              </a>
-              <a class="sobre" href="#habilidades">
-                <li>Habilidades</li>
-              </a>
-            </ul>
-          </nav>
         </section>
+        
+        
         <section class="container_saudacao">
-          <h1 class="saudacao">Olá, Bem-vindo(a)! Eu sou Victor.</h1>
-          <p class="detalhes_saudacao">Desenvolvedor Front-End</p>
-          <button class="botao_sobre" onclick="abrirModalSobre()" type="button">Sobre mim</button>
-          <button class="botao_contato" onclick="abrirModal()" type="button">Contatos</button> 
+            <div class="box-saudacao">
+              <h1 class="saudacao">Olá, Bem-vindo(a)! Eu sou Victor.</h1>
+              <p class="detalhes_saudacao">Desenvolvedor Front-End</p>
+              <div class="botoes">
+                <button class="botao_sobre" onclick="abrirModalSobre()" type="button">Sobre mim</button>
+                <button class="botao_contato" onclick="abrirModal()" type="button">Contatos</button>
+                <button class="botao_projetos" onclick="abrirProjetos()" type="button">Projetos</button>
+              </div>
+            </div>
         </section>
+
+
         <section>
           <div class="modal_sobre">
             <div class="modal">
@@ -92,12 +89,10 @@
             </div>
           </div>
         </section>
+
+
         <section class="container_projetos">
           <h1 class="projetos" id="projetos">Projetos</h1>
-          <div class="card_projeto">
-            <img src="" alt="" />
-            <p></p>
-          </div>
           <div class="card_projeto">
             <figure class="snip0015">
               <img src="./assets/images/pixabay.png" alt="" />
@@ -168,11 +163,9 @@
               </figcaption>
             </figure>
           </div>
-          <div class="card_projeto">
-            <img src="" alt="" />
-            <p></p>
-          </div>
         </section>
+
+
         <section class="container_habilidades" id="habilidades">
           <h1 class="titulo_habilidades">Habilidades</h1>
           <div class="card_habilidades">
@@ -185,6 +178,8 @@
             />
           </div>
         </section>
+
+
         <div class="wrapper">
           <img
             src="https://imagensemoldes.com.br/wp-content/uploads/2020/01/Super-Mario-Mario-PNG-78.png"
@@ -196,7 +191,6 @@
             >&copy;Mr.Ghostsnow
           </a>
         </footer>
-      </div>
     </div>
     <script src="./script.js"></script>
   </body>

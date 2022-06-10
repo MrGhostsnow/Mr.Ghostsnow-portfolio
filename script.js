@@ -4,7 +4,8 @@ const email = document.getElementById("email");
 const phone = document.getElementById("phone");
 const modal = document.querySelector(".modal_contato");
 const close = document.querySelector(".close_modal");
-const sobreModal = document.querySelector(".modal_sobre")
+const sobreModal = document.querySelector(".modal_sobre");
+const projetos = document.querySelector(".container_projetos");
 
 
 function abrirModal(){
@@ -31,6 +32,25 @@ function fecharModalSobre(){
         sobreModal.style.display = "none";
     })
 };
+
+
+let visibilidade = true;
+
+
+
+function abrirProjetos() {
+    if(visibilidade){
+    addEventListener("click", () => {
+        projetos.style.display = "flex"
+    })
+    visibilidade = false
+    } else{
+        addEventListener("click", () => {
+            projetos.style.display = "none"
+        })
+        visibilidade = true
+    }
+}
 
 
 // window.addEventListener("click", () => {
