@@ -336,7 +336,8 @@ span {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 30%;
+    text-indent: 10px;
+    width: 50%;
     color: aliceblue;
 }
 
